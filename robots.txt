@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://webxfearless.pages.dev/sitemap.xml
