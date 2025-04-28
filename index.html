@@ -41,7 +41,7 @@
     <!-- <link rel="preload" href="vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"></noscript> -->
 
-<link rel="preload" href="purged-css/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/css/fontawesome-p.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="purged-css/assets/css/fontawesome.css"></noscript>
 
 <!-- <link rel="preload" href="assets/css/templatemo-onix-digital.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -137,6 +137,11 @@ html, body {
     display: inline !important;
   }
 }
+@media (max-width: 768px) {
+  .small-hide{
+    display:none !important;
+  }
+}
 /* @media (max-width: 768px) {
   .table thead {
     display: none;
@@ -212,6 +217,7 @@ html, body {
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1); /* Subtle shadow for depth */
+    z-index: 100; /* Ensure it appears above other elements */
   }
   
   .cta-button:hover {
@@ -367,7 +373,8 @@ html, body {
           letter-spacing: 0.25px; 
           transition: all .3s; 
           text-decoration: none; 
-          cursor: pointer;" aria-label="Book a Strategy Call">Book a Strategy Call</a>
+          cursor: pointer;
+          margin:10px;" aria-label="Book a Strategy Call">Book a Strategy Call</a>
                 </div>
                 <!-- <div class="item header-text">
                   <h6>Online Marketing</h6>
@@ -796,16 +803,16 @@ html, body {
 
   <div id="pricing" class="pricing-tables">
     <div class="tables-left-dec">
-      <img src="assets/images/tables-left-dec.webp" alt="bg image" loading="lazy">
+      <img src="assets/images/tables-left-dec.webp" alt="bg image" class="small-hide" loading="lazy">
     </div>
     <div class="tables-right-dec">
-      <img src="assets/images/tables-right-dec.webp" alt="bg image" loading="lazy">
+      <img src="assets/images/tables-right-dec.webp" alt="bg image" class="small-hide" loading="lazy">
     </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading">
-            <h2 style="scale: 1.4;">Why This <span style="color: #ff695f;">Matters</span> For You</h2>
+            <h2 style="scale: 1.2;">Why This <span style="color: #ff695f;">Matters</span> For You</h2>
             <!-- <span>Our Plans</span> -->
           </div>
         </div>
@@ -919,7 +926,7 @@ html, body {
             <div class="logo">
               <a href="/"><img src="assets/images/logo.webp" alt="WebXFearless" style="scale: 1.7;border-radius: 50%;" aria-label="Visit WebXFearless"></a>
             </div>
-            <a href="mailto:webbrother66@gmail.com">Email Us: webbrother66@gmail.com</a>
+            <a href="mailto:webbrother66@gmail.com"><b>Email Us: webbrother66@gmail.com</b></a>
             <ul>
               <li><a href="https://www.reddit.com/u/TwoRevolutionary9550" aria-label="Visit WebXFearless reddit account"><i class="fa fa-reddit"></i></a></li>
               <li><a href="https://x.com/maneeshwarx"><i class="fa fa-twitter"  aria-label="Visit WebXFearless x/twitter account"></i></a></li>
